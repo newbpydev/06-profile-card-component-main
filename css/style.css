@@ -31,9 +31,29 @@
 */
 
 /*! Variables  */
+:root {
+  --prim-color-dark-cyan: hsl(185, 75%, 39%);
+  --prim-color-v-dark-desa-blue: hsl(229, 23%, 23%);
+  --prim-color-dark-gray-blue: hsl(227, 10%, 46%);
+  --neut-color-gray: hsl(0, 0%, 59%);
+
+  --font-size-name-stats: 1.8rem;
+}
+
+/*! General Styles  */
+
 
 /*! Style Notes  */
-/*! Style Notes  */
+profile-card
+profile-bg-top-img
+profile-user-img
+user-age
+user-city
+user-stats
+stats-data
+stats-num
+stats-title
+
 /*! Style Notes  */
 /*! Style Notes  */
 /*! Style Notes  */
