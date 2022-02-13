@@ -30,11 +30,20 @@
 
 */
 
-/*! Variables  */ 
-/*! Style Notes  */ 
-/*! Style Notes  */ 
-/*! Style Notes  */ 
-/*! Style Notes  */ 
-/*! Style Notes  */ 
-/*! Style Notes  */ 
-/*! Style Notes  */ 
+/*! Variables  */
+
+/*! Style Notes  */
+/*! Style Notes  */
+/*! Style Notes  */
+/*! Style Notes  */
+/*! Style Notes  */
+/*! Style Notes  */
+
+/*! Attribution  */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
