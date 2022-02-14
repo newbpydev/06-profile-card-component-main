@@ -64,13 +64,11 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  min-width: 100vw;
   position: relative;
   
   overflow: hidden;
   background-color: var(--prim-color-dark-cyan);
-}
-
-main {
 }
 
 main::before {
@@ -78,9 +76,8 @@ main::before {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
+  bottom: 50%;
+  right: 50%;
   z-index: -1;
 }
 main::after {
@@ -88,14 +85,13 @@ main::after {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  bottom: 0;
-  right: 0;
-  transform: translate(50%, 50%);
-  z-index: -1;
+  top: 50%;
+  left: 50;
+  z-index: -2;
 }
 
 
-/*! Style Notes  */
+/*! Card Styles  */
 .profile-card {
   width: 32.5rem;
   background-color: #fff;
@@ -103,6 +99,7 @@ main::after {
   overflow: hidden;
   position: relative;
   margin-bottom: 4.8rem;
+  box-shadow: 0rem 3rem 3rem rgba(0, 0, 0, .2);
 }
 
 .pattern-user-grid {
@@ -172,14 +169,9 @@ main::after {
   color: var(--prim-color-dark-gray-blue);
 }
 
-
-/*! Style Notes  */
-/*! Style Notes  */
-/*! Style Notes  */
-/*! Style Notes  */
-
 /*! Attribution  */
 .attribution {
+  display: none;
   font-size: 11px;
   text-align: center;
   color: var(--prim-color-v-dark-desa-blue);
