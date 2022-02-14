@@ -171,7 +171,6 @@ main::after {
 
 /*! Attribution  */
 .attribution {
-  display: none;
   font-size: 11px;
   text-align: center;
   color: var(--prim-color-v-dark-desa-blue);
@@ -180,3 +179,4 @@ main::after {
   color: #fff;
   text-decoration: none;
 }
+
