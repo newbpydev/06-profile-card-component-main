@@ -29,6 +29,7 @@
       - Weights: 400, 700
 
 */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 /*! Variables  */
 :root {
@@ -38,21 +39,139 @@
   --neut-color-gray: hsl(0, 0%, 59%);
 
   --font-size-name-stats: 1.8rem;
+  
+  --border-radius: 1rem;
 }
 
 /*! General Styles  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: var(--font-size-name-stats);
+  text-align: center;
+  color: var(--prim-color-v-dark-desa-blue);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  
+  overflow: hidden;
+  background-color: var(--prim-color-dark-cyan);
+}
+
+main {
+}
+
+main::before {
+  content: url('/images/bg-pattern-top.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+main::after {
+  content: url('/images/bg-pattern-top.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+  z-index: -1;
+}
 
 
 /*! Style Notes  */
-profile-card
-profile-bg-top-img
-profile-user-img
-user-age
-user-city
-user-stats
-stats-data
-stats-num
-stats-title
+.profile-card {
+  width: 32.5rem;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 4.8rem;
+}
+
+.pattern-user-grid {
+  display: flex;
+  flex-direction: column;
+
+  /* position: relative; */
+}
+
+.profile-bg-top-img {
+  width: auto;
+  height: 14rem;
+}
+
+
+.user-info {
+  height: 14rem;
+  border-bottom: .1rem solid hsla(0, 0%, 59%, 0.445);
+  position: relative;
+}
+
+.profile-user-img {
+  width: 10rem;
+  height: 10rem;
+  border: .4rem solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+}
+
+.user-name {
+  padding-top: 7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.user-age {
+  font-weight: 400;
+  color: var(--prim-color-dark-gray-blue);
+}
+
+.user-city {
+  font-size: 1.4rem;
+  color: var(--prim-color-dark-gray-blue);
+}
+
+.user-stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem 2rem 4rem;
+  margin-top: 2.4rem;
+}
+
+.stats-data {
+}
+
+.stats-num {
+  font-weight: 700;
+  margin-bottom: .1rem;
+}
+
+.stats-title {
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  color: var(--prim-color-dark-gray-blue);
+}
+
 
 /*! Style Notes  */
 /*! Style Notes  */
@@ -63,7 +182,9 @@ stats-title
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--prim-color-v-dark-desa-blue);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #fff;
+  text-decoration: none;
 }
